@@ -1,0 +1,13 @@
+.footer {
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    display: flex;
+}

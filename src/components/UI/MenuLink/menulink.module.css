@@ -1,0 +1,102 @@
+.link {
+    text-transform: uppercase;
+    min-width: 100px;
+    text-align: center;
+    padding: 10px 15px;
+    transition: color 0.7s;
+
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+}
+.link:before, .link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: transparent;
+}
+.link:before {
+    top: 0;
+}
+.link:after {
+    bottom: 0;
+}
+
+.link:hover {
+    color: #168dff;
+}
+
+.link:hover > * > *:before, .link:hover > * > *:after {
+    transform: translate3d(0, 0, 0);
+}
+.link:hover > * > * > *:before, .link:hover > * > * > *:after {
+    transform: translate3d(0, 0, 0);
+}
+.link > *:before, .link > *:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: transparent;
+}
+.link > *:before {
+    left: 0;
+}
+.link > *:after {
+    right: 0;
+}
+.link > * > *:before, .link > * > *:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    z-index: 9;
+    height: 2px;
+    width: 100%;
+    background-color: #168dff;
+}
+.link > * > *:before {
+    top: 0;
+    transform: translate3d(-105%, 0, 0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link > * > *:after {
+    bottom: 0;
+    transform: translate3d(105%, 0, 0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link > * > * > *:before, .link > * > * > *:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 2px;
+    background-color: #168dff;
+}
+.link > * > * > *:before {
+    left: 0;
+    transform: translate3d(0, 105%, 0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link > * > * > *:after {
+    right: 0;
+    transform: translate3d(0, -105%, 0);
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active {
+    color: #168dff !important;
+}
+
+@media (max-width: 900px) {
+    .link {
+        padding: 5px 5px;
+    }
+}
+
+

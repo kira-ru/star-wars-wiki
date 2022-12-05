@@ -1,0 +1,30 @@
+/* var(--card-height) */
+
+.desc {
+    max-height: var(--card-height);
+    width: var(--card-width);
+    padding: var(--card-padding);
+    backdrop-filter: blur(var(--blur));
+    background-color: rgba(52, 58, 64, 0.5);
+    border-radius: var(--border-radius-medium);
+}
+
+.title {
+    font-size: var(--font-size-medium);
+}
+
+.item_name {
+    color: var(--color-params-dark);
+
+}
+
+.item_value {
+    margin-left: 10px;
+}
+
+@media (max-width: 590px) {
+    .desc {
+        flex-grow: 1;
+        width: 100%;
+    }
+}

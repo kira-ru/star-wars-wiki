@@ -1,0 +1,14 @@
+
+
+.page {
+    font-size: 28px;
+    transition: color 0.4s;
+}
+
+.page:hover {
+    color: #168dff;
+}
+
+.active {
+    color: #168dff !important;
+}

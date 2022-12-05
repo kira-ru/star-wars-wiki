@@ -1,0 +1,40 @@
+:root {
+    --font-family: 'Barlow Condensed', sans-serif;
+
+    --font-size-title: 40px;
+    --font-size-big: 26px;
+    --font-size-medium: 20px;
+    --font-size-small: 14px;
+
+    --content-width: 1230px;
+    --container-offset: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+
+    --color-white: #fff;
+    --color-black: #000;
+    --color-red: #f00;
+    --color-green: #00a340;
+    --color-dark: #141414;
+    --color-light-dark: #1f1f1f;
+    --color-primary: #168dff;
+    --color-dark-primary: #003f63;
+    --color-gray-dark: #343a40;
+    --color-gray-dark-rgba: rgba(52, 58, 64, 1);
+
+    --color-params-dark: #58b5f3;
+
+    --menu-width-big: 200px;
+    --menu-width-small: 150px;
+
+    --menu-margin: 130px;
+
+
+    --border-radius-medium: 10px;
+
+    --card-height: 370px;
+    --card-width: 270px;
+    --card-padding: 20px 10px;
+
+    --blur: 12px;
+}

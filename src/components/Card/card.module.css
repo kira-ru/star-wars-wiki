@@ -1,0 +1,36 @@
+.card {
+    display: block ;
+    position: relative;
+    border-radius: var(--border-radius-medium);
+    height: 100%;
+    max-width: var(--card-width);
+    overflow: hidden;
+}
+
+.photo {
+    height: 100%;
+    border-radius: var(--border-radius-medium)
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 8px;
+
+    text-align: center;
+
+    min-width: 142px;
+    max-width: 112%;
+    border-right: 30px solid transparent;
+    /* border-right: 30px solid transparent; */
+    border-top: 30px solid var(--color-gray-dark);
+}
+
+.name p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    margin-top: -27px;
+}
